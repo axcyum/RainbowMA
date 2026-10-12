@@ -4,7 +4,7 @@
   <p><b>いつものアバターを、動き続ける虹色へ。</b></p>
   <p>lilToon × Modular Avatar · Unity 2022.3.22f1 · VRChat PC</p>
   <p>
-    <a href="https://modular-avatar.nadena.dev/ja/"><img src="https://img.shields.io/badge/Modular_Avatar-1.18.1-blue?style=flat" alt="Modular Avatar 検証済みバージョン 1.18.1"></a>
+    <a href="https://github.com/bdunderscore/modular-avatar"><img src="https://img.shields.io/badge/Modular_Avatar-1.18.1-blue?style=flat" alt="Modular Avatar 検証済みバージョン 1.18.1"></a>
     <a href="https://github.com/lilxyzw/lilToon/releases/tag/2.3.4"><img src="https://img.shields.io/badge/lilToon-2.3.4-brightgreen?style=flat" alt="lilToon 検証済みバージョン 2.3.4"></a>
   </p>
   <p>
@@ -19,7 +19,7 @@
 
 **Prefabをアバター直下に置くだけ。** 本体・アウトライン・ワイヤーに動く虹色を追加し、回転、ライト、Render QueueをExpression Menuから切り替えられます。MA / NDMFがビルド用コピーに設定を生成するため、元のマテリアルやAnimatorを直接編集する必要はありません。
 
-## 📦 ダウンロード
+## ダウンロード
 
 <table>
   <tr><th>lilToonが導入済み</th><th>lilToon未導入</th></tr>
@@ -28,16 +28,11 @@
       <a href="dist/RainbowMA-Gaming-Speed-ColliderJump.unitypackage?raw=true"><img src="docs/images/download.svg" width="240" alt="Rainbow MAのみをダウンロード"></a><br>
       Rainbow MAのみ
     </td>
-    <td align="center">
-      <a href="dist/RainbowMA-Gaming-Speed-ColliderJump-lilToon234.unitypackage?raw=true"><img src="docs/images/download-bundle.svg" width="240" alt="lilToon 2.3.4同梱版をダウンロード"></a><br>
-      lilToon 2.3.4同梱
-    </td>
   </tr>
 </table>
 
-両方とも**VRChat Avatars SDKとModular Avatarは別途必要**です。既にlilToonがある場合は「Rainbow MAのみ」を選び、`Packages/jp.lilxyzw.liltoon`と`Assets/lilToon`を二重に入れないでください。
-
-## ✨ できること
+両方とも**VRChat Avatars SDKとModular Avatarは別途必要**です。
+##  できること
 
 | 機能 | 動作 |
 | :-- | :-- |
@@ -59,7 +54,7 @@
 
 上の画像は検証用メッシュの静止プレビューです。VRChat実機のアバター画像ではありません。色の流れと発光の見え方は、形状・照明・Bloom設定によって変わります。
 
-## 🧩 必要なもの
+## 必要なもの
 
 | 項目 | 検証したバージョン / 対象 |
 | :-- | :-- |
