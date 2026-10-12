@@ -1,0 +1,10 @@
+* text=auto
+*.cs text eol=lf
+*.hlsl text eol=lf
+*.shader text eol=lf
+*.lilcontainer text eol=lf
+*.lilblock text eol=lf
+*.md text eol=lf
+*.svg text eol=lf
+*.unitypackage binary
+*.png binary

@@ -1,0 +1,14 @@
+# Unity-generated data
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+.vs/
+.idea/
+*.csproj
+*.sln
+*.user
+*.tmp
+.DS_Store
+Thumbs.db

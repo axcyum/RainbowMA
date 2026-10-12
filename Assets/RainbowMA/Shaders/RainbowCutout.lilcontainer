@@ -1,0 +1,31 @@
+Shader "RainbowMA/lilToon Cutout"
+{
+    Properties
+    {
+        lilProperties "Default"
+        lilProperties "DefaultCutout"
+        _RainbowRotationAngle ("Rotation degrees", Float) = 0
+        _RainbowObjectToAvatar0 ("Object to avatar X", Vector) = (1,0,0,0)
+        _RainbowObjectToAvatar1 ("Object to avatar Y", Vector) = (0,1,0,0)
+        _RainbowObjectToAvatar2 ("Object to avatar Z", Vector) = (0,0,1,0)
+        _RainbowAvatarToObject0 ("Avatar to object X", Vector) = (1,0,0,0)
+        _RainbowAvatarToObject1 ("Avatar to object Y", Vector) = (0,1,0,0)
+        _RainbowAvatarToObject2 ("Avatar to object Z", Vector) = (0,0,1,0)
+        _RainbowRowY ("Avatar height row", Vector) = (0,1,0,0)
+        _RainbowMinY ("Min Y", Float) = 0
+        _RainbowHeight ("Height", Float) = 1.8
+        _RainbowEmission ("Rainbow emission", Float) = 1.5
+        _RainbowSpeed ("Cycles per second", Float) = 0.15
+        _RainbowOutlinePhase ("Outline phase offset", Float) = 0.333333
+        _RainbowOutlineEmission ("Outline emission", Float) = 2
+    }
+    HLSLINCLUDE
+        #define LIL_RENDER 1
+    ENDHLSL
+    lilSubShaderTags {"RenderType"="TransparentCutout" "Queue"="AlphaTest"}
+    lilSubShaderInsert "RainbowInsert.hlsl"
+    lilSubShaderBRP "Default"
+    CustomEditor "lilToon.lilToonInspector"
+}
+
+

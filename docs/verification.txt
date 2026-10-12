@@ -1,0 +1,15 @@
+Unity 2022.3.22f1 isolated project
+NDMF+MA full build PASS
+Rotation FX loop 0/90/360 degrees PASS
+OFF angle reset PASS
+MA float parameter and Japanese menu PASS
+24 queue/wire material variants retain rotation and outline exceptions PASS
+Opaque/cutout/transparent/wire all shader passes compiled PASS
+GPU renders at 0/90/360 degrees: common avatar pivot and loop seam PASS
+Default/custom Base controller gating PASS
+Custom gestures and source clips/controllers unchanged PASS
+Speed radial 0 to 4x, default 1x PASS
+Collider jump geometry, local only and OFF default PASS
+Render Queue max 5000 and menu pagination PASS
+Native Unity package exports PASS
+VRChat in-game test not performed
