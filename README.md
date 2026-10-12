@@ -38,7 +38,7 @@
 | 機能 | 動作 |
 | :-- | :-- |
 | 🌈 本体・アウトライン | 高さに沿った虹色が常にスクロール。本体とアウトラインの色の開始位置をずらせます。 |
-| 🕸️ Gaming Rainbow Wire | 白い不透明な面と陰影を残し、三角形のエッジが虹色に発光します。 |
+| 🕸 Gaming Rainbow Wire | 白い不透明な面と陰影を残し、三角形のエッジが虹色に発光します。 |
 | 💡 Rainbow Lights | 色が巡る7個のUnity Point LightをON/OFF。 |
 | 🔄 回転・速度 | 既存ポーズの描画結果にY軸回転を加算。メニューで0〜4倍に変更できます。 |
 | 📚 Render Queue | 全マテリアルをまとめて切り替え。既定プリセットは最大5000。 |
@@ -70,7 +70,7 @@
 
 カスタムシェーダーとGeometry Shaderを使用するため、Quest / Android向けではありません。
 
-## 🛠️ 導入方法
+## 🛠 導入方法
 
 ![依存ツールを用意し、unitypackageをインポートし、Prefabをアバター直下に置く3ステップ](docs/images/install.svg)
 
@@ -89,7 +89,7 @@ My Avatar                  ← Avatar Descriptor
 
 アバター1体につきPrefabは1つです。取り外すと、Rainbow MAによるビルド時の追加も外れます。既に旧版を使用している場合は同じ`Assets/RainbowMA`へインポートして更新してください。
 
-## 🎛️ メニューと設定
+## 🎛 メニューと設定
 
 ![Rainbow MAの6つのメニューと回転速度の目安](docs/images/menu.svg)
 
@@ -182,7 +182,7 @@ Queue値はアニメーションで直接変更せず、事前生成したマテ
 
 **VRChat実機テストは含みません。** 詳細は[検証記録](docs/verification.txt)を参照してください。
 
-## 🗂️ リポジトリ構成
+## 🗂 リポジトリ構成
 
 ```text
 Assets/RainbowMA/       Unityへ導入するソース・シェーダー・Prefab
