@@ -4,7 +4,7 @@
   <p><b>いつものアバターを、動き続ける虹色へ。</b></p>
   <p>lilToon × Modular Avatar · Unity 2022.3.22f1 · VRChat PC</p>
   <p>
-    <a href="https://modular-avatar.nadena.dev/ja/"><img src="https://img.shields.io/badge/Modular_Avatar-1.18.1-brightgreen?style=flat" alt="Modular Avatar 検証済みバージョン 1.18.1"></a>
+    <a href="https://modular-avatar.nadena.dev/ja/"><img src="https://img.shields.io/badge/Modular_Avatar-1.18.1-blue?style=flat" alt="Modular Avatar 検証済みバージョン 1.18.1"></a>
     <a href="https://github.com/lilxyzw/lilToon/releases/tag/2.3.4"><img src="https://img.shields.io/badge/lilToon-2.3.4-brightgreen?style=flat" alt="lilToon 検証済みバージョン 2.3.4"></a>
   </p>
   <p>
