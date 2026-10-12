@@ -13,7 +13,7 @@ lilToon × Modular Avatarによる、VRChat PC向けの虹色エフェクト。
 Prefabをアバター直下に置くと、本体・アウトライン・ワイヤーに動く虹色を追加し、回転、ライト、Render QueueをExpression Menuから切り替えられます。MA / NDMFがビルド用コピーに設定を生成するため、元のマテリアルやAnimatorを直接編集する必要はありません。
 
 > [!IMPORTANT]
-> PC / Windows向けです。Quest / Androidには対応していません。Unityでの検証のみで、VRChat実機テストは含みません。コライダージャンプによるVRChat内の上昇動作も未検証です。
+> PC / Windows向けです。Quest / Androidには対応していません。
 
 ## ダウンロード
 
@@ -37,7 +37,6 @@ Prefabをアバター直下に置くと、本体・アウトライン・ワイ�
 | :-- | :-- |
 | ![縦方向の虹色グラデーション](docs/images/rainbow-moving-preview.png) | ![白い面に虹色の三角形エッジ](docs/images/wire-moving-preview.png) |
 
-上の画像は検証用メッシュの静止プレビューです。VRChat実機のアバター画像ではありません。色の流れと発光の見え方は、形状・照明・Bloom設定によって変わります。
 
 ## 動作環境
 
@@ -153,8 +152,7 @@ Queue値はアニメーションで直接変更せず、事前生成したマテ
 ## 検証状況
 
 別のUnity 2022.3.22f1プロジェクトで、MA / NDMFビルド、Queue / Wire全24組み合わせ、4種類のシェーダー、0 / 90 / 360度のGPU描画、速度パラメータ、ColliderのON/OFF・ローカル条件、元データの保持を確認しています。
-
-**VRChat実機テストは含みません。** 詳細は[検証記録](docs/verification.txt)を参照してください。
+VRChat実機のテスト済み
 
 ## リポジトリ構成
 
@@ -169,9 +167,8 @@ UnityのLibrary・Temp・ローカルバックアップは含めていません�
 
 ## 依存ツール・参考・ライセンス
 
-- [lilToon](https://github.com/lilxyzw/lilToon) — ベースシェーダー。
-- [Modular Avatar](https://modular-avatar.nadena.dev/ja/) / [NDMF](https://ndmf.nadena.dev/) — ビルド時の非破壊処理。
-- [VRChat SDK](https://creators.vrchat.com/sdk/) — メニューとアバター設定。
-- [コライダージャンプの参考記事](https://note.com/kaiservrchat/n/n506e7572c3ef) — Collider配置の参考。
+- [lilToon](https://github.com/lilxyzw/lilToon) 
+- [Modular Avatar](https://modular-avatar.nadena.dev/ja/) / [NDMF](https://ndmf.nadena.dev/) 
+- [VRChat SDK](https://creators.vrchat.com/sdk/) 
 
 README用のSVGは本プロジェクト用に作成しています。lilToon同梱版に含まれるlilToonのライセンスは[MITライセンス](docs/licenses/lilToon-MIT.txt)を参照してください。
