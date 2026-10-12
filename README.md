@@ -17,7 +17,7 @@ Prefabをアバター直下に置くと、本体・アウトライン・ワイ�
 
 ## ダウンロード
 
-[Rainbow MAをダウンロード](dist/RainbowMA-Gaming-Speed-ColliderJump.unitypackage?raw=true)（lilToon導入済みのプロジェクト向け）
+[Rainbow MAをダウンロード](https://github.com/axcyum/RainbowMA/releases/download/v1.0.0/RainbowMA.unitypackage)（lilToon導入済みのプロジェクト向け）
 
 **VRChat Avatars SDKとModular Avatarは別途必要です。**
 
