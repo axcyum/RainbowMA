@@ -22,7 +22,7 @@
 ## ダウンロード
 
 <table>
-  <tr><th>lilToonが導入済み</th><th>lilToon未導入</th></tr>
+  <tr><th>lilToonが導入済み</th></tr>
   <tr>
     <td align="center">
       <a href="dist/RainbowMA-Gaming-Speed-ColliderJump.unitypackage?raw=true"><img src="docs/images/download.svg" width="240" alt="Rainbow MAのみをダウンロード"></a><br>
