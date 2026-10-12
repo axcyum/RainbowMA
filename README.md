@@ -1,60 +1,45 @@
 <div align="center">
-  <img src="docs/images/logo.svg" width="144" height="144" alt="虹色の輪とワイヤーで描いたRainbow MAのロゴ">
+  <img src="docs/images/logo.svg" width="144" height="144" alt="logo">
   <h1>Rainbow MA</h1>
-  <p><b>いつものアバターを、動き続ける虹色へ。</b></p>
-  <p>lilToon × Modular Avatar · Unity 2022.3.22f1 · VRChat PC</p>
+</div>
+<div align="center">
   <p>
     <a href="https://github.com/bdunderscore/modular-avatar"><img src="https://img.shields.io/badge/Modular_Avatar-1.18.1-blue?style=flat" alt="Modular Avatar 検証済みバージョン 1.18.1"></a>
     <a href="https://github.com/lilxyzw/lilToon/releases/tag/2.3.4"><img src="https://img.shields.io/badge/lilToon-2.3.4-brightgreen?style=flat" alt="lilToon 検証済みバージョン 2.3.4"></a>
   </p>
-  <p>
-    <a href="#-ダウンロード">ダウンロード</a> ·
-    <a href="#-導入方法">導入方法</a> ·
-    <a href="#-メニューと設定">メニューと設定</a> ·
-    <a href="#-困ったとき">困ったとき</a>
-  </p>
 </div>
+lilToon × Modular Avatarによる、VRChat PC向けの虹色エフェクト。
 
-![虹色の本体・アウトライン、白い面のゲーミングWire、非破壊のPrefab導入を示す機能イメージ](docs/images/banner.svg)
+Prefabをアバター直下に置くと、本体・アウトライン・ワイヤーに動く虹色を追加し、回転、ライト、Render QueueをExpression Menuから切り替えられます。MA / NDMFがビルド用コピーに設定を生成するため、元のマテリアルやAnimatorを直接編集する必要はありません。
 
-**Prefabをアバター直下に置くだけ。** 本体・アウトライン・ワイヤーに動く虹色を追加し、回転、ライト、Render QueueをExpression Menuから切り替えられます。MA / NDMFがビルド用コピーに設定を生成するため、元のマテリアルやAnimatorを直接編集する必要はありません。
+> [!IMPORTANT]
+> PC / Windows向けです。Quest / Androidには対応していません。Unityでの検証のみで、VRChat実機テストは含みません。コライダージャンプによるVRChat内の上昇動作も未検証です。
 
 ## ダウンロード
 
-<table>
-  <tr><th>lilToonが導入済み</th></tr>
-  <tr>
-    <td align="center">
-      <a href="dist/RainbowMA-Gaming-Speed-ColliderJump.unitypackage?raw=true"><img src="docs/images/download.svg" width="240" alt="Rainbow MAのみをダウンロード"></a><br>
-      Rainbow MAのみ
-    </td>
-  </tr>
-</table>
+[Rainbow MAをダウンロード](dist/RainbowMA-Gaming-Speed-ColliderJump.unitypackage?raw=true)（lilToon導入済みのプロジェクト向け）
 
-両方とも**VRChat Avatars SDKとModular Avatarは別途必要**です。
-##  できること
+**VRChat Avatars SDKとModular Avatarは別途必要です。**
+
+## 機能
 
 | 機能 | 動作 |
 | :-- | :-- |
-| 🌈 本体・アウトライン | 高さに沿った虹色が常にスクロール。本体とアウトラインの色の開始位置をずらせます。 |
-| 🕸 Gaming Rainbow Wire | 白い不透明な面と陰影を残し、三角形のエッジが虹色に発光します。 |
-| 💡 Rainbow Lights | 色が巡る7個のUnity Point LightをON/OFF。 |
-| 🔄 回転・速度 | 既存ポーズの描画結果にY軸回転を加算。メニューで0〜4倍に変更できます。 |
-| 📚 Render Queue | 全マテリアルをまとめて切り替え。既定プリセットは最大5000。 |
-| 🚀 コライダージャンプ | 足元のBox Colliderをローカル限定でON/OFF。読み込み時はOFF。 |
-| 🎯 アウトラインの例外 | 特定オブジェクトだけを除外。子階層を含めるかも選べます。 |
+| 本体・アウトライン | 高さに沿った虹色が常にスクロール。本体とアウトラインの色の開始位置をずらせます。 |
+| Gaming Rainbow Wire | 白い不透明な面と陰影を残し、三角形のエッジが虹色に発光します。 |
+| Rainbow Lights | 色が巡る7個のUnity Point LightをON/OFF。 |
+| 回転・速度 | 既存ポーズの描画結果にY軸回転を加算。メニューで0〜4倍に変更できます。 |
+| Render Queue | 全マテリアルをまとめて切り替え。既定プリセットは最大5000。 |
+| コライダージャンプ | 足元のBox Colliderをローカル限定でON/OFF。読み込み時はOFF。 |
+| アウトラインの例外 | 特定オブジェクトだけを除外。子階層を含めるかも選べます。 |
 
-<table>
-  <tr><th>虹色の本体・アウトライン</th><th>白い面＋虹色のWire</th></tr>
-  <tr>
-    <td><img src="docs/images/rainbow-moving-preview.png" width="360" alt="検証メッシュの縦方向の虹色グラデーション"></td>
-    <td><img src="docs/images/wire-moving-preview.png" width="360" alt="白い面に虹色の三角形エッジが光る検証メッシュ"></td>
-  </tr>
-</table>
+| 本体・アウトライン | 白い面＋虹色Wire |
+| :-- | :-- |
+| ![縦方向の虹色グラデーション](docs/images/rainbow-moving-preview.png) | ![白い面に虹色の三角形エッジ](docs/images/wire-moving-preview.png) |
 
 上の画像は検証用メッシュの静止プレビューです。VRChat実機のアバター画像ではありません。色の流れと発光の見え方は、形状・照明・Bloom設定によって変わります。
 
-## 必要なもの
+## 動作環境
 
 | 項目 | 検証したバージョン / 対象 |
 | :-- | :-- |
@@ -69,28 +54,18 @@
 
 カスタムシェーダーとGeometry Shaderを使用するため、Quest / Android向けではありません。
 
-## 🛠 導入方法
-
-![依存ツールを用意し、unitypackageをインポートし、Prefabをアバター直下に置く3ステップ](docs/images/install.svg)
+## 導入方法
 
 1. Avatars SDK・MA・lilToonを導入したUnityプロジェクトを開きます。
 2. **Assets → Import Package → Custom Package…** からダウンロードした`.unitypackage`を選び、インポートします。
 3. `Assets/RainbowMA/Prefabs/Rainbow MA.prefab`を、**Avatar Descriptorが付いているアバターの直下**へドラッグします。
 4. Prefabインスタンスの設定を調整し、Play Mode / NDMFビルドで確認してからアップロードします。
 
-```text
-My Avatar                  ← Avatar Descriptor
-├── Armature
-├── Body
-├── Clothes
-└── Rainbow MA              ← Prefabをここへ
-```
+配置例：Avatar Descriptorが付いた`My Avatar`の直下に、`Armature`・`Body`・`Clothes`と並べて`Rainbow MA`を置きます。
 
 アバター1体につきPrefabは1つです。取り外すと、Rainbow MAによるビルド時の追加も外れます。既に旧版を使用している場合は同じ`Assets/RainbowMA`へインポートして更新してください。
 
-## 🎛 メニューと設定
-
-![Rainbow MAの6つのメニューと回転速度の目安](docs/images/menu.svg)
+## メニューと設定
 
 MAのビルド後、既存Expression Menuへ**Rainbow MA**が追加されます。
 
@@ -162,7 +137,7 @@ Queue値はアニメーションで直接変更せず、事前生成したマテ
 > [!IMPORTANT]
 > Colliderの生成・切り替えはUnityで検証済みですが、**現在のVRChat内で実際に上昇する動作は未検証**です。参考記事は2022年の方式で、クライアントやワールドの制限によって動作しない場合があります。
 
-## 🔍 困ったとき
+## トラブルシューティング
 
 | 症状 | 確認すること |
 | :-- | :-- |
@@ -175,13 +150,13 @@ Queue値はアニメーションで直接変更せず、事前生成したマテ
 
 さらに詳しい設定は[日本語リファレンス](Assets/RainbowMA/README_日本語.txt)を参照してください。
 
-## 🧪 検証状況
+## 検証状況
 
 別のUnity 2022.3.22f1プロジェクトで、MA / NDMFビルド、Queue / Wire全24組み合わせ、4種類のシェーダー、0 / 90 / 360度のGPU描画、速度パラメータ、ColliderのON/OFF・ローカル条件、元データの保持を確認しています。
 
 **VRChat実機テストは含みません。** 詳細は[検証記録](docs/verification.txt)を参照してください。
 
-## 🗂 リポジトリ構成
+## リポジトリ構成
 
 ```text
 Assets/RainbowMA/       Unityへ導入するソース・シェーダー・Prefab
@@ -192,7 +167,7 @@ docs/verification.txt  検証記録
 
 UnityのLibrary・Temp・ローカルバックアップは含めていません。
 
-## 🙏 使用ツール・参考
+## 依存ツール・参考・ライセンス
 
 - [lilToon](https://github.com/lilxyzw/lilToon) — ベースシェーダー。
 - [Modular Avatar](https://modular-avatar.nadena.dev/ja/) / [NDMF](https://ndmf.nadena.dev/) — ビルド時の非破壊処理。
